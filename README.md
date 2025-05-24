@@ -72,7 +72,7 @@ cd core
 npm install
 # or
 yarn install
-# or (RECOMMENDED)
+# or (recommended)
 pnpm install
 ```
 
