@@ -9,7 +9,6 @@ import { waitlistRouter } from "./routers/waitlist";
  */
 export const appRouter = createTRPCRouter({
   waitlist: waitlistRouter,
-  // post: postRouter,
 });
 
 // export type definition of API
@@ -20,6 +19,6 @@ export type AppRouter = typeof appRouter;
  * @example
  * const trpc = createCaller(createContext);
  * const res = await trpc.post.all();
- *       ^? Post[]
+ *       ^? Waitlist[]
  */
 export const createCaller = createCallerFactory(appRouter);
